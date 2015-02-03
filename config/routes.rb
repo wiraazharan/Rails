@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  root :to => redirect('/ideas')
+
+  resources :ideas
+
   get 'pages/about'
 
   get 'pages/contact'
